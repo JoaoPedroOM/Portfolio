@@ -1,0 +1,24 @@
+@import "./global/global.css";
+
+/* Utilidade */
+@import "./utilidades/componentes.css";
+
+/* Home */
+@import "./home/header.css";
+@import "./home/introducao.css";
+@import "./home/projetos.css";
+@import "./home/servicos.css";
+@import "./home/tecnologias.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --gradient: linear-gradient(to left, rgb(31, 22, 112), rgb(147, 7, 241), rgb(113, 9, 231), rgb(0, 217, 255));
+}
+
+/* https://icons8.com/illustrations/illustration/space-process-of-transferring-information-using-computer-technology */
+

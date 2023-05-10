@@ -1,0 +1,82 @@
+.container{
+  max-width: 130rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-portfolio {
+  font-family: 'Poppins', sans-serif;
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #1f1236;
+  transition: 0.1s;
+}
+
+.button-portfolio a{
+  color: white;
+}
+
+.button-portfolio::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button-portfolio:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  transition: 0.5s;
+}
+
+.btnGitHub {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.btnGitHub{
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.btnGitHub svg path {
+  transition: 400ms;
+}
+
+.btnGitHub:hover {
+  background-color: white;
+}
+
+.btnGitHub:hover {
+  color: #181717;
+}
+
+.btnGitHub:hover svg path {
+  fill: #181717;
+}

@@ -1,0 +1,248 @@
+.introducao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5rem;
+  padding-bottom: 22rem;
+  padding-top: 20rem;
+}
+.introducao-conteudo{
+  align-self: center;
+  justify-self: center;
+}
+
+.introducao-conteudo h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 800;
+  background-image: var(--gradient);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.introducao-conteudo span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: rgb(82, 82, 224); 
+}
+#digitando::after{
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+.introducao img{
+  height:100%;
+  object-fit: cover;
+  width: 100%;
+}
+.portfolio{
+  margin-top: 5rem;
+}
+.app-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+.img-apresentacao {
+  margin-bottom: 15rem;
+}
+.img-apresentacao img{
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+  border-radius: .5rem;
+}
+.apresentacao{
+  margin-bottom: 10rem;
+  width: 65rem;
+}
+.apresentacao h2{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.6rem;
+  color: rgb(66, 104, 231);
+}
+.apresentacao p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #94a3b8;
+  margin-bottom: 5rem;
+}
+
+.contato-wrapper{
+  display: flex;
+  gap: 8rem;
+}
+.contato-wrapper h2{
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact p a{
+  color: #94a3b8;
+  font-size: 1.5rem;
+  position: relative;
+
+}
+
+.contato a::after{
+  content:"" ;
+  display: block;
+  height: .2rem;
+  width: 0%;
+  background:  rgb(82, 82, 224);;
+  margin-top: .4rem;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.contact a:hover:after{
+  width: 100%;
+}
+
+.icon{
+    width: 62px;
+    height: 62px;
+    background-color: rgba(72, 72, 102, 0.363);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.icon img{
+  width: 34px; 
+  height: 34px;
+}
+@media(max-width: 1092px){
+  .contact p a{
+    font-size: 1.3rem;
+  }
+}
+@media(max-width:950px){
+  .img-apresentacao img{
+    display: none;
+  }
+  .apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .apresentacao > p{
+    padding-right: 2.5rem;
+    text-align: center;
+    width: 70rem;
+    font-size: 2rem;
+  }
+}
+@media(max-width: 767px){
+
+  .introducao{
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .introducao img{
+    object-fit: cover;
+    max-width: 90%;
+    height: auto;
+  }
+  .app-section{
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .img-apresentacao img{
+    display: block;
+  }
+  .img-apresentacao{
+    margin-bottom: 4rem;
+  }
+  .img-apresentacao img{
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+  }
+  .apresentacao > p{
+    /* padding-right: 2rem; */
+    padding-left: 2rem;
+  }
+
+}
+@media(max-width: 673px){
+  .introducao{
+    grid-template-columns: 4fr 1fr;
+  }
+  .introducao img{
+    display: none;
+  }
+  .apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .apresentacao > p{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    width: 55rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media(max-width:580px){
+  .contato-wrapper{
+    flex-direction: column;
+    gap: 1px;
+  }
+}
+
+@media(max-width:480px){
+  .introducao{
+    grid-template-columns: 1fr;
+  }
+
+  .img-apresentacao img{
+   padding-left: 3rem;
+   margin-right: 5rem;
+  }
+  
+  .apresentacao > p{
+    width: 40rem;
+    font-size: 1.6rem;
+  }
+
+}
+@media(max-width:320px){
+
+  .img-apresentacao img{
+    padding-left: 2rem;
+    /* margin-right: 10rem; */
+   }
+   
+  .apresentacao > p{
+    width: 35rem;
+    font-size: 1.5rem;
+  }
+}
