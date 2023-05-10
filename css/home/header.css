@@ -2,7 +2,7 @@
     position: fixed;
     background-image: linear-gradient(180deg, black, #221133);
     z-index: 999;
-    width: 99.7%;
+    width: 100%;
 } 
 .menu > a{
   font-family: 'Poppins', sans-serif;
